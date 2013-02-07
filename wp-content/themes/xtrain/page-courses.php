@@ -42,6 +42,7 @@ the_post();
                         }
                         $thumbid = get_post_meta($course->ID, 'Thumbnail');
                         $thumbid = $thumbid[0];
+                        
                         $price = get_post_meta($course->ID, 'Price');
                         $price = $price[0];
                         $hours = get_post_meta($course->ID, 'Hours');
@@ -55,8 +56,13 @@ the_post();
                                         <a href="<?=get_permalink($course->ID)?>" class="font2 featurebox-title">
                                            <?=$course->post_title?>
                                         </a>
+                                        
                                         <a href="<?=get_permalink($course->ID)?>">
+                                            <?php if ($thumbid) { ?>
                                             <img src="<?php echo wp_get_attachment_url($thumbid) ?>" alt="" />
+                                            <?php } else { ?>
+                                            <img src="<?php bloginfo('stylesheet_directory') ?>/images/image-coming-soon.jpg" alt="" />
+                                            <?php } ?>
                                         </a>
                                         <div class="course-listing-price-row">
                                             <div class="course-listing-price font1"><?=$hours ? $hours.' Hours - ' : ''?><?=$price ? '&pound;'.$price : ''?></div>
