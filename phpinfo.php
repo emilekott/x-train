@@ -1,0 +1,1 @@
+<?php if(mail('adam@developstuff.net','Subject Here','Hello, This is just a simple test mail send. Thanks.')): echo 'Mail() returned true!'; else: echo 'Mail() returned false :('; endif; ?>

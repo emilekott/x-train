@@ -1,0 +1,4 @@
+.sub-menu,#header,.mainmenus,.menu-tuition-menu-container,.menu,.menu-item { z-index: 102; }
+#selects { z-index: 1; }
+.sub-menu { clear:both; }
+.ie-last-row-child { margin-right: 0px; }

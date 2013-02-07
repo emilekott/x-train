@@ -1,0 +1,46 @@
+/*************************************************
+*  This CSS file belongs to WP-Table Reloaded!   *
+*  DO NOT make any changes here, add them to the *
+* "Custom CSS" textarea in the "Plugin Options"! *
+*************************************************/
+
+.wp-table-reloaded {
+	border-collapse: separate;
+	border-spacing: 2px;	
+	margin: 10px 0px 15px 0px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+	background-color:#FFF;
+	border:2px solid #FFF;
+}
+.wp-table-reloaded th {
+	
+	padding: 4px;
+	color: #3D3D3D!important;
+}
+.wp-table-reloaded td {
+	color: #3D3D3D;
+	padding: 4px;
+	
+	vertical-align: top;
+}
+
+.wp-table-reloaded .column-1 {
+font-weight:bold;
+}
+
+.wp-table-reloaded .column-1, .column-3, .column-5, .column-7, .column-9, .column-11, .column-13 {
+	background-color: #00B9F2;
+}
+
+.wp-table-reloaded .column-2, .column-4, .column-6, .column-8, .column-10, .column-12 {
+	background-color: #44C9F6;
+}
+.wp-table-reloaded .row-hover tr:hover td {
+	background-color: #D0D0D6!important;
+}
+.wp-table-reloaded-table-description {
+	clear: both;
+	display: block;
+}
