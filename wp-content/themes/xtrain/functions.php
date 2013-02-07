@@ -203,7 +203,7 @@ add_action('init','initJavascript');
 function get_courses($course_category_page_id = false)
 {
         global $wpdb;
-	$proba_metavalues = $wpdb->get_results("SELECT post_id,menu_order,post_title FROM $wpdb->postmeta LEFT JOIN wp_posts wpp ON(ID = post_id) WHERE meta_key = '_wp_page_template' AND meta_value = 'page-coursedetail.php' ORDER BY menu_order");
+	$proba_metavalues = $wpdb->get_results("SELECT post_id,menu_order,post_title FROM $wpdb->postmeta LEFT JOIN wp_posts wpp ON(ID = post_id) WHERE meta_key = '_wp_page_template' AND meta_value = 'page-coursedetail.php' AND post_status='publish' ORDER BY menu_order");
        
        
         foreach($proba_metavalues as $course):
